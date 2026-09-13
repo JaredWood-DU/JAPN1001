@@ -9,12 +9,15 @@
 \usepackage{titlesec}
 \usepackage{courier}
 \usepackage{pdfpages}
-\usepackage{minted} % optional, requires --shell-escape
+\usepackage{minted}
 \usepackage{caption}
-\usepackage{xurl} % Allows URLs to break anywhere
-\usepackage[hidelinks]{hyperref} % Clickable links without the ugly boxes
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
 \usepackage{CJKutf8}
-\urlstyle{same} % Makes URL font match the surrounding text (MLA style)
+\usepackage{tabularx}
+\usepackage{booktabs}
+\urlstyle{same}
+
 
 
 \title{JAPN1001 - Notes}
@@ -100,94 +103,105 @@
 
 % Page Contents
 \subsection{あいさつ （挨拶）- Aisatsu}
-\begin{itemize}
-    \item おはよう。\text{Good morning.}
-    \item おはようございます。\text{Good morning. (Polite)}
-    \item こんにちは。\text{Good afternoon.}
-    \item こんばんは。\text{Good evening.}
-    \item さようなら。\text{Goodbye.}
-    \item おやすみ（なさい）。\text{Good night.}
-    \item ありがとう。\text{Thank you.}
-    \item ありがとうございます。\text{Thank you. (Polite)}
-    \item すみません。\text{Excuse me.; I'm sorry.}
-    \item いいえ。\text{No.; Not at all.}
-    \item いってきます。；行ってきます。\text{I'll go and come back.}
-    \item いってらしゃい。；行ってらしゃい。\text{Please go and come back.}
-    \item ただいま。\text{I'm home.}
-    \item おかえり（なさい）。\text{Welcome home.}
-    \item いただきます。\text{Thank you for the meal. (Before eating)}
-    \item ごちそうさま（でした）。\text{Thank you for the meal. (After eating)}
-    \item はじめまして。\text{How do you do?}
-    \item 〜です。\text{I am...}
-    \item よろしくおねがいします。\text{Nice to meet you.}
-\end{itemize}
+\begin{tabularx}{\textwidth}{X X}
+    \toprule
+    \textbf{Japanese (日本語)} & \textbf{English (英語)} \\
+    \midrule
+    おはよう。 & Good morning. \\
+    おはようございます。 & Good morning (Polite). \\
+    こんにちは。 & Good afternoon. \\
+    こんばんは。 & Good evening. \\
+    さようなら。 & Goodbye. \\
+    おやすみ（なさい）。 & Goodnight. \\
+    ありがとう。 & Thank you. \\
+    ありがとうございます。 & Thank you (Polite). \\
+    すみません。 & Excuse me. / I’m Sorry. \\
+    いいえ。 & No. / Not at all. \\
+    いってきます。 & I’ll go and come back. \\
+    いってらっしゃい。 & Please go and come back. \\
+    ただいま。 & I’m home. \\
+    おかえり（なさい）。 & Welcome home. \\
+    いただきます。 & Thank you for the meal (Before eating). \\
+    ごちそうさまでした。 & Thank you for the meal (After eating). \\
+    はじめまして。 & How do you do? \\
+    ～です。 & I am... \\
+    よろしくおねがいします。 & Nice to meet you. \\
+    \bottomrule
+\end{tabularx}
 
 \newpage
 \subsection{じゅぎょうにべんりなひょうげん - Useful Classroom Expressions}
-\noindent Teacher Instructions:
-\begin{enumerate}
-    \item きいてください。\text{Please listen or Please ask.}
-    \item いってください。\text{Please speak.}
-    \item ＿をかいてください。\text{Please write \textunderscore .}
-    \item よんでください。 \text{Please read.}
-    \item リピートしてください。\text{Please repeat (after me).}
-    \item しゅくだいください。\text{Homework please.}
-    \item わかりましたか？\text{Do you understand?}
-    \item ＿ぺージをみてください。\text{Please look at page \textunderscore .}
-\end{enumerate}
-
-\noindent Both:
-\begin{enumerate}
-    \item もういちどいってください。\text{Please say it again.}
-    \item ちょっとまってください。\text{Please wait a moment.}
-\end{enumerate}
-
-\noindent Student Questions/Requests:
-\begin{enumerate}
-    \item はい、わかりました。\text{Yes, I understand or Yes, I understood.}
-    \item いいえ、わかりません。\text{No, I don't understand or No, I don't know.}
-    \item ゆっくりいってください。\text{Please say it slowly.}
-    \item ＿はなんですか。\text{What is this \textunderscore ?}
-    \item えいごではなしてもいいですか？\text{May I speak in English?}
-    \item ＿はにほんごでなんですか？\text{What is \textunderscore in Japanese?}
-    \item ＿はえいごでなんですか？\text{What is \textunderscore in English?}
-\end{enumerate}
+\begin{tabularx}{\textwidth}{X X}
+    \toprule
+    \textbf{Japanese (日本語)} & \textbf{English (英語)} \\
+    \midrule
+    \textbf{TEACHER INSTRUCTIONS:} & \\
+    きいてください。 & Please listen. / Please ask. \\
+    いってください。 & Please speak. \\
+    \_をかいてください。 & Please write \_. \\
+    よんでください。 & Please read. \\
+    リピートしてください。 & Please repeat (after me). \\
+    しゅくだいください。 & Homework please. \\
+    わかりましたか。 & Do you understand? \\
+    \_ページをみてください。 & Please look at page... \\
+    \hline
+    \textbf{BOTH:} & \\
+    もういちどいってください。& Please say it again. \\
+    ちょっとまってください。& Please wait a moment. \\
+    \hline
+    \textbf{STUDENT QUESTIONS/REQUESTS:} & \\
+    はい、わかりました。& Yes, I understand or Yes, I understood. \\
+    いいえ、わかりません。& No, I don't understand or No, I don't know. \\
+    ゆっくりいってください。& Please say it slowly. \\
+    \_はなんですか。& What is this \_? \\
+    えいごではなしてもいいですか。& May I speak in English? \\
+    \_はにほんごでなんですか。& What is \_ in Japanese? \\
+    \_はえいごでなんですか。& What is \_ in English? \\
+    \bottomrule
+\end{tabularx}
 
 \newpage
 \subsection{すうじ（数字） - Suuji}
-\begin{itemize}
-    \item ゼロ／れえ（零）\text{0}
-    \item いち（一）\text{1}
-    \item に（二）\text{2}
-    \item さん（三）\text{3}
-    \item よん／し／よ（四）\text{4}
-    \item ご（五）\text{5}
-    \item ろく（六）\text{6}
-    \item なな／しち（七）\text{7}
-    \item はち（八）\text{8}
-    \item きゅう／く（九）\text{9}
-    \item じゅう（十）\text{10}
-    \item にじゅうに（二十二）\text{22}
-    \item ひゃく（百）\text{100}
-    \item にひゃくにじゅうに（二百二十二）\text{222}
-    \item せん（千）\text{1000}
-    \item にせんにひゃくにじゅうに（二千二百二十二）\text{2222}
-    \item まん（万）\text{10000}
-    \item にまんにせんにひゃくにじゅうに（二万二千二百二十二）\text{22222}
-\end{itemize}
+\begin{tabularx}{\textwidth}{X X X}
+    \toprule
+    \textbf{Japanese (日本語)} & \textbf{Kanji} & \textbf{English (英語)} \\
+    \midrule
+    ゼロ／れえ & 零 & 0 \\
+    いち & 一 & 1 \\
+    に & 二 & 2 \\
+    さん & 三 & 3 \\
+    よん／し／よ & 四 & 4 \\
+    ご & 五 & 5 \\
+    ろく & 六 & 6 \\
+    なな／しち & 七 & 7 \\
+    はち & 八 & 8 \\
+    きゅう／く & 九 & 9 \\
+    じゅう & 十 & 10 \\
+    にじゅうに & 二十二 & 22 \\
+    ひゃく & 百 & 100 \\
+    にひゃくにじゅうに & 二百二十二 & 222 \\
+    せん & 千 & 1000 \\
+    にせんにひゃくにじゅうに & 二千二百二十二 & 2222 \\
+    まん & 万 & 10000 \\
+    にまんにせんにひゃくにじゅうに & 二万二千二百二十二 & 22222 \\
+    \bottomrule
+\end{tabularx}
 
-\noindent\rule{\linewidth}{1pt}
 \subsection{たんご（単語） - Vocabulary}
-\begin{itemize}
-    \item あさ（朝）\text{Morning}
-    \item きせす（季節）\text{Season}
-    \item すし（寿司）\text{Sushi}
-    \item そと（外）\text{Outside}
-    \item せかい（世界）\text{The world}
-    \item あそこ（彼処）\text{Over there}
-    \item あお（青）\text{Blue}
-    \item こえ（声）\text{Voice}
-\end{itemize}
+\begin{tabularx}{\textwidth}{X X X}
+    \toprule
+    \textbf{Japanese (日本語)} & \textbf{Kanji} & \textbf{English (英語)} \\
+    \midrule
+    あさ & 朝 & Morning \\
+    きせす & 季節 & Season \\
+    すし & 寿司 & Sushi \\
+    そと & 外 & Outside \\
+    せかい & 世界 & The world \\
+    あそこ & 彼処 & Over there \\
+    あお & 青 & Blue \\
+    こえ & 声 & Voice \\
+    \bottomrule
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END Week 1
